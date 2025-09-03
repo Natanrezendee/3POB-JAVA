@@ -1,0 +1,24 @@
+/*Exercício 5: construir um programa em Java que leia o ano de nascimento de uma pessoa e que
+calcule a sua idade aproximada. Se a idade aproximada for maior ou igual a 16, imprimir “Apto
+a ser eleitor”, imprimir “Inapto a ser eleitor”, caso contrário.*/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Qual sua idade? ");
+        int idade = sc.nextInt();
+
+        if(idade >= 16){
+            System.out.print("Você é apto a ser eleitor!");
+
+        }
+        else{
+            System.out.print("Inapto a ser eleitor!");
+        }
+
+        sc.close();
+    }
+}
