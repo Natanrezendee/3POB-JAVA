@@ -1,2 +1,2 @@
-# Lista-de-exercios-02-3POB-JAVA
-Respostas referentes a lista de exercícios 2 da matéria 3POB ministrada pelo professor Louzada da Faculdade de Ensino Tecnológico do Estado do Rio de Janeiro
+# 3POB-JAVA
+Este repositório contém os projetos e exercícios práticos realizados durante a disciplina Análise e Desenvolvimento de Sistemas, com foco na linguagem de programação Java. O objetivo é aplicar conceitos de análise de sistemas, modelagem de dados, engenharia de software e desenvolvimento de soluções computacionais de forma eficiente
