@@ -1,0 +1,31 @@
+/*Exercício 4: Média de notas de uma turma
+
+Descrição:
+Desenvolva um programa que calcule a média das notas de uma turma, onde
+o usuário informe quantos alunos há na turma e suas respectivas notas.
+Requisitos:
+• O programa deve solicitar a quantidade de alunos.
+• Deve utilizar um loop for para receber as notas de cada aluno.
+• Utilizar um acumulador para somar todas as notas.
+• No final, exibir a média da turma.*/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Insira a quantidade de alunos ");
+        int qtdAlun = sc.nextInt();
+        float mediaGeral = 0;
+
+        for(int i = 1; i <= qtdAlun; i++){
+            System.out.print("Insira a nota do aluno " + i + " ");
+            float nota = sc.nextFloat();
+            mediaGeral += nota;
+        }
+        mediaGeral = mediaGeral/qtdAlun;
+        System.out.printf("Media Geral: %.2f", mediaGeral);
+
+    }
+}
