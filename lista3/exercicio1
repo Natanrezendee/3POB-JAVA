@@ -1,0 +1,26 @@
+/*Exercício 1: Soma dos N primeiros números naturais
+Descrição:
+Crie um programa que solicite ao usuário um número N e utilize um looop for
+para calcular a soma dos primeiros N números naturais.
+Requisitos:
+• O programa deve utilizar um contador para iterar de 1 até N.
+• Deve utilizar um acumulador para somar os valores sucessivos.
+• Ao final, exibir a soma total.*/
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+    Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o enésimo valor para a soma de seus antecessores ");
+        int enesimo = sc.nextInt();
+        int soma = 0;
+
+        for(int i = 0; i < enesimo; i++){
+            soma += i + 1;
+        }
+
+        System.out.print("Soma total: " + soma);
+    }
+}
