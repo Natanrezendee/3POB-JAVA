@@ -1,0 +1,51 @@
+/*Exercício 2: Remover um Elemento da Lista*/
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> nomes = new ArrayList<>();
+
+        boolean continuar = true;
+
+        while (continuar) {
+            System.out.print("Digite um nome: ");
+            String nome = scanner.next();
+            nomes.add(nome);
+
+            System.out.print("Deseja adicionar outro nome? (s/n): ");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("n")) {
+                continuar = false;
+            }
+        }
+
+        System.out.println("\nNomes da lista:");
+        for (String n : nomes) {
+            System.out.println(n);
+        }
+
+        System.out.print("\nGostaria de tirar um nome da lista? (s/n): ");
+        String remover = scanner.next();
+
+        if (remover.equalsIgnoreCase("s")) {
+            System.out.print("Digite o nome exato que deseja remover: ");
+            String nomeRemover = scanner.next();
+
+            if (nomes.remove(nomeRemover)) {
+                System.out.println("\n✅ Nome removido com sucesso!");
+            } else {
+                System.out.println("\n⚠️ Nome não encontrado na lista.");
+            }
+        }
+
+        System.out.println("\nLista final de nomes:");
+        for (String n : nomes) {
+            System.out.println(n);
+        }
+
+        scanner.close();
+    }
+}
