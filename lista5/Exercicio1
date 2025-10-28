@@ -1,0 +1,32 @@
+/*Exercício 1: Adicionar e Exibir Números*/
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> numeros = new ArrayList<>();
+
+        boolean continuar = true;
+
+        while (continuar) {
+            System.out.print("Digite um número inteiro: ");
+            int numero = scanner.nextInt();
+            numeros.add(numero);
+
+            System.out.print("Deseja adicionar outro número? (s/n): ");
+            String resposta = scanner.next();
+            if (resposta.equalsIgnoreCase("n")) {
+                continuar = false;
+            }
+        }
+
+        System.out.println("\nNúmeros digitados:");
+        for (int n : numeros) {
+            System.out.println(n);
+        }
+
+        scanner.close();
+    }
+}
