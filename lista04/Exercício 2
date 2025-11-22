@@ -1,0 +1,29 @@
+//Exercício 2: Cálculo da Média de Notas
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+    int qtdnotas = 4;
+    float media = 0;
+    float[] notas = new float[qtdnotas];
+    Scanner sc = new Scanner(System.in);
+
+     for(int i = 1; i <= qtdnotas; i++){
+        System.out.print("Digite a nota " + i + " : ");
+        notas[i - 1] = sc.nextFloat();
+
+    }
+     for(int i = 0; i < qtdnotas; i++){
+         media += notas[i];
+     }
+        media = media/qtdnotas;
+        System.out.printf("Média final: %.2f\n", media);
+     if(media >= 7.0){
+         System.out.println("Aprovado!");
+     }
+     else{
+         System.out.println("Reprovado!");
+     }
+    }
+}
