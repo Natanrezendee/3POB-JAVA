@@ -1,0 +1,30 @@
+//Exercício 5: Busca de Elemento em um Array
+
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int[] nums = new int[10];
+
+        for(int i = 0; i < 10; i++){
+            System.out.printf("Número %d: ", i + 1);
+            nums[i] = sc.nextInt();
+        }
+        System.out.print("Insira o número que deseja buscar: ");
+         int numero = sc.nextInt();
+         int z = 0;
+        while(z < 10){
+            if(nums[z] == numero){
+                System.out.printf("Número encontrado no índice %d", z);
+                z = 11;
+                break;
+            }
+            else z++;
+
+        }
+        if(z != 11){
+            System.out.print("Número não econtrado!");
+        }
+    }
+}
