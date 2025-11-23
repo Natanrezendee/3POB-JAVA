@@ -1,0 +1,18 @@
+//Exercício 3: Inversão de Elementos de um Array
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+        int[] nums = new int[6];
+        Scanner sc = new Scanner(System.in);
+
+        for(int i = 0; i < 6; i++){
+            System.out.printf("Número %d: ", i + 1);
+            nums[i] = sc.nextInt();
+        }
+        for(int i = 5; i >= 0; i--){
+            System.out.printf("%d", nums[i]);
+        }
+    }
+}
